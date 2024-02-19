@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { routes } from '../../app.routes';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'sidemenu',
   standalone: true,
-  imports: [],
+  imports: [ RouterModule ],
   templateUrl: './sidemenu.component.html',
   styles: ``
 })
@@ -24,7 +25,7 @@ export class SidemenuComponent {
     //   .filter( route => route && route.path )
     //   .filter( route => !route.path?.includes(':'))
 
-    // console.log(dashboardRoutes);
+    console.log(this.menuItems);
     
 
   } 
