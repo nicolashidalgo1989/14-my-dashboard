@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
+  selector: 'app-title',
   standalone: true,
   imports: [],
-  templateUrl: './users.component.html',
+  templateUrl: './title.component.html',
   styles: ``
 })
-export default class UsersComponent {
+export class TitleComponent {
 
 }
