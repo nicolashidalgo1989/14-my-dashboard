@@ -31,4 +31,37 @@
 
   </div>
 
+  <div class="bg-white rounded shadow p-10">
+    
+    <h2 class="text-2xl font-bold mb-5">for: </h2>
+    
+    <ul>  
+      @for(framework of frameworks(); track framework;
+      let i = $index, first = $first, last = $last, even = $even, odd = $odd, count = $count){
+        <li [class]="{
+          'bg-red-100': even && !first && !last,
+          'bg-blue-100': odd && !first && !last,
+          'bg-purple-100':  first || last,
+        }">
+          {{ i + 1 }}/{{ count }} - {{ framework }}
+        </li>
+      }
+    </ul>
+
+  </div>
+
+  <div class="bg-white rounded shadow p-10">
+    
+    <h2 class="text-2xl font-bold mb-5">empty: </h2>
+     
+    <ul>  
+      @for(framework of frameworks2(); track $index){
+        <li>{{ framework }}</li>
+      } @empty {
+        <li>No hay frameworks en el arreglo</li> 
+      }
+    </ul>
+
+  </div>
+
 </section>
