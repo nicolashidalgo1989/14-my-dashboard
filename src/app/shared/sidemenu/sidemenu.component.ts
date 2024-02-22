@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   styles: ``
 })
 export class SidemenuComponent {
-  
+
   public menuItems = routes
     .map( route => route.children ?? [] )
     .flat()
@@ -25,9 +25,9 @@ export class SidemenuComponent {
     //   .filter( route => route && route.path )
     //   .filter( route => !route.path?.includes(':'))
 
-    console.log(this.menuItems);
-    
+    // console.log(this.menuItems);
 
-  } 
+
+  }
 
 }

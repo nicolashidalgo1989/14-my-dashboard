@@ -1,1 +1,23 @@
-<p>defer-views works!</p>
+<section class="grid grid-cols-1">
+  @defer () {
+    <heavy-loaders-slow cssClass="bg-blue-500"/>
+  } @placeholder {
+    <p class="h-[200px] w-full bg-gradient-lo-r from-gray-200 to-gray-400 animate-pulse">
+      Cargando...
+    </p>
+  }
+  @defer () {
+    <heavy-loaders-slow cssClass="bg-green-500"/>
+  } @placeholder {
+    <p class="h-[200px] w-full bg-gradient-lo-r from-gray-200 to-gray-400 animate-pulse">
+      Cargando...
+    </p>
+  }
+  @defer () {
+    <heavy-loaders-slow cssClass="bg-purple-500"/>
+  } @placeholder {
+    <p class="h-[200px] w-full bg-gradient-lo-r from-gray-200 to-gray-400 animate-pulse">
+      Cargando...
+    </p>
+  }
+</section>

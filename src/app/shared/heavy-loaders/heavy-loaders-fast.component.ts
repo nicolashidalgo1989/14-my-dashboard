@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
     <h1>Heavy Loaders Fast</h1>
   `,
 })
-export class HeavyLoadersComponent {
+export class HeavyLoadersFastComponent {
 
 }
