@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class TitleComponent {
-
+  @Input({ required: true }) title!: string;
 }
