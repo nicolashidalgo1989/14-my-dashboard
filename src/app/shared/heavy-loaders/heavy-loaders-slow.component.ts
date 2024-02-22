@@ -6,7 +6,7 @@ import { Component, Input, input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section [ngClass]="['w-full h-[200px]', cssClass]">
+    <section [ngClass]="['w-full h-[600px]', cssClass]">
       Heavy Loaders Slow
     </section>
   `,
